@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main className="font-yk text-[#ec0b42] bg-[#ffcfe4] h-screen w-screen flex items-center justify-center flex-col">
       <div className="flex flex-row">
-        <Image src={"/hearts.png"} alt="" width={200} height={40} />
-        <Image src={"/hearts.png"} alt="" width={200} height={40} />
+        <Image src={"/hearts.PNG"} alt="" width={200} height={40} />
+        <Image src={"/hearts.PNG"} alt="" width={200} height={40} />
       </div>
       <div className="h-2/5 flex items-center justify-center">
         <h1 className="text-5xl ">Camila Campillo</h1>
@@ -54,14 +54,14 @@ export default function Home() {
       <div className="flex flex-row">
         <Image
           className="rotate-180"
-          src={"/hearts.png"}
+          src={"/hearts.PNG"}
           alt=""
           width={200}
           height={40}
         />
         <Image
           className="rotate-180"
-          src={"/hearts.png"}
+          src={"/hearts.PNG"}
           alt=""
           width={200}
           height={40}

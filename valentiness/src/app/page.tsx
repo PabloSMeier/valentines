@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
-  const [radio, setRadio] = useState(false);
+  const [radio, setRadio] = useState<number>();
 
   return (
     <main className="font-yk text-[#ec0b42] bg-[#ffcfe4] h-screen w-screen flex items-center justify-center flex-col">
@@ -23,7 +23,7 @@ export default function Home() {
               type="radio"
               name="opcion"
               value="si"
-              onChange={() => setRadio(true)}
+              onChange={() => setRadio(1)}
             />
 
             <span>Yes</span>
@@ -34,18 +34,19 @@ export default function Home() {
               type="radio"
               name="opcion"
               value="no"
-              onChange={() => setRadio(false)}
+              onChange={() => setRadio(2)}
             />
             <span>No</span>
           </label>
         </div>
-        {radio ? (
+        {radio == 1 && (
           <div className="flex items-center justify-center h-full flex-col">
             <h2>Thank you my love!! we will be together foreverr!!</h2>
             <h2>I love you with every little part of my soul</h2>
             <h2>Thank you for being you</h2>
           </div>
-        ) : (
+        )}
+        {radio == 2 && (
           <div className="flex items-center justify-center h-full flex-col">
             <h2>There is nothing but sadness :&#40;</h2>
           </div>
